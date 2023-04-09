@@ -1,0 +1,15 @@
+import random
+
+def generate_key():
+    key = []
+    for i in range(16):
+        key.append(random.randint(0,255))
+    return key
+
+def encrypt(data):
+    key = generate_key()
+    # Use key to encrypt data
+    print("Data encrypted with key:", key)
+
+encrypt("Sensitive data")
+print("Remember to always check your code! CTFLAB2023{Always_check_the_code}")
